@@ -3,14 +3,39 @@ apu tran "print" with "hello world"
 apu mem write "RAM0" with 5
 tran pulse pin 3 width 2ns
 print "Hello world"
+
 function test
     print "test1234"
     print "Xin chào"
 call test
-otest is 100 + 100 + 8739487 - 34827 + 48384 - 5455
+
+otest is 100 + 100 + 87394 - 348 + 483 - 54 + 50 - 9
 print otest
-print 1 + 1 + 10383487 - 438744
+print (1 + 1 + 10383 - 438)
+
 function testtest
     print "test1234"
     print "Xin chào"
 call testtest
+
+print (1234567 + 987654)
+print (100000 - 9999)
+print (3141 + 2718)
+print (92233 - 2147)
+print (99999 - 8888)
+print (12345 + 98765)
+print (1000000 - 1)
+print (77777 + 222223)
+print (55555 - 33333)
+print (313 - 8)
+
+for i in range(1, 5):
+    print "hi"
+
+i is 2
+if i == 2:
+    apu tran "core" with "midstep"
+elif i == 3:
+    apu mem write "RAM1" with "99"
+else:
+    print "other"
