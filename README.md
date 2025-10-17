@@ -2,6 +2,6 @@
 It is bybylang but is jit
 # JIT
 ```shell
-python main.py main.bybylang
+./bybylangjit yourfile.bybylang
 ```
 You need install java to use jit
